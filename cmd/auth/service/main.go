@@ -8,6 +8,12 @@ import (
 )
 
 func main() {
+	setup := false
+	if !setup {
+		setup := true
+		_ = setup
+	}
+	_ = setup
 	fxmain.Main(
 		ofx.RedisCacheModule,
 		module.AuthModule,
